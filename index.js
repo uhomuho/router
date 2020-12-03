@@ -8,7 +8,7 @@ const express = require('express'),
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-app.use('/', proxy('http://tomcat.utyf.ru/api'));
+app.use('/', proxy('http://tomcat.utyf.ru/api', { secure: false }));
 
 let PORT = process.env.PORT || 8083
 const server = app.listen( PORT, () => {
