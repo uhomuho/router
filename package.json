@@ -4,8 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon -L index.js"
   },
   "author": "uhomuho",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.2",
+    "nodemon": "^2.0.6",
+    "request": "^2.88.2"
+  }
 }
